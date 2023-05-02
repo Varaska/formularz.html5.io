@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- action= wartość to miejsce na które będzie wysłany mail formularzu Imie@.com ( z formpree) -->
+    <form action="https://formspree.io/f/xyyaowvw" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+
+
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="surname" required>
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        
+        <!-- lista rozwijana -->
+        <label for="city">Miasto:</label>
+        <select id="city" name="city" required>
+            <option value="">Wybierz miasto</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select>
+        <br>
+        <!-- aby pola wzajemnie się wykluczały typu "radio", atrybut name ma być taki sam w obu  -->
+        <label>Płeć:</label>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-male">Mężczyzna</label>
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        <label for="gender-female">Kobieta</label>
+        <br>
+
+        <label for="consent">Zgoda na dane osobowe:</label>
+        <input type="checkbox" id="consent" name="consent" required>
+        <br>
+
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Zapisz się</button>
+
+
+    </form>
+
+
+</body>
+
+</html>
